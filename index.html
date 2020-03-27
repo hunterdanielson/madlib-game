@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Lib</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Mad Lib here
+    <!-- inputs for words -->
+    <section id="input-container">
+        input container
+        <ul>
+            <label>
+                Noun
+                <input id="noun-1"/>
+            </label>
+            <label>
+                Noun
+                <input id="noun-2"/>
+            </label>
+            <label>
+                Noun
+                <input id="noun-3"/>
+            </label>
+            <label>
+                Noun
+                <input id="noun-4"/>
+            </label>
+            
+
+            <label>
+                Verb
+                <input id="verb-1"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-2"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-3"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-4"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-5"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-6"/>
+            </label>
+            <label>
+                Verb
+                <input id="verb-7"/>
+            </label>
+
+
+            <label>
+                Adverb 
+                <input id="adverb-1"/>
+            </label>
+            <label>
+                Interjection 
+                <input id="interjection-1"/>
+            </label>
+        </ul>
+        <button id="button">Create Madlib</button>
+    </section>
+    <section id="madlib-container">
+        madlib text here
+        <p>We're no strangers to <span id="noun-1-span"></span>
+            You know the (noun2) and so do I
+            A full commitment's what I'm (verb1) of
+            You wouldn't get this from any other (noun3)
+            I just wanna (verb2) you how I'm feeling
+            Gotta make you understand
+            Never gonna (verb3) you up
+            Never gonna let you (adverb)
+            Never gonna run around and (verb4) you
+            Never gonna make you (verb5)
+            Never gonna say (interjection)
+            Never gonna (verb6) a (noun4) and (verb7) you
+           </p>
+    </section>
+
+    <!-- button to submit input, hides inputs, and display madlib -->
+
+    <!-- text of madlib hidden until button pressed -->
+
+<script src="app.js"></script>
 </body>
 </html>

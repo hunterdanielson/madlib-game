@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+#input-container {
+    background-color: aqua;
+}
+
+#madlib-container {
+    display: none;
+}
