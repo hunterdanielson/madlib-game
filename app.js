@@ -11,7 +11,7 @@ const verb3Input = document.getElementById('verb-3');
 const verb4Input = document.getElementById('verb-4');
 const verb5Input = document.getElementById('verb-5');
 const verb6Input = document.getElementById('verb-6');
-const verb7Input = document.getElementById('verb-7');
+
 
 const adverb1Input = document.getElementById('adverb-1');
 
@@ -28,7 +28,7 @@ const verb3Span = document.getElementById('verb-3-span');
 const verb4Span = document.getElementById('verb-4-span');
 const verb5Span = document.getElementById('verb-5-span');
 const verb6Span = document.getElementById('verb-6-span');
-const verb7Span = document.getElementById('verb-7-span');
+
 
 const adverb1Span = document.getElementById('adverb-1-span');
 
@@ -42,6 +42,7 @@ const madlibContainer = document.getElementById('madlib-container');
 
 // need button to add event listener
 const myButton = document.getElementById('button');
+const resetButton = document.getElementById('reset');
 
 
 function createMadlib() {
@@ -59,7 +60,7 @@ function createMadlib() {
     verb4Span.textContent = verb4Input.value;
     verb5Span.textContent = verb5Input.value;
     verb6Span.textContent = verb6Input.value;
-    verb7Span.textContent = verb7Input.value;
+    
 
     adverb1Span.textContent = adverb1Input.value;
 
@@ -70,5 +71,12 @@ function createMadlib() {
     madlibContainer.style.display = 'block';
 }
 
+function resetMadLib() {
+    console.log('reseting');
+    inputContainer.style.display = 'block';
+    madlibContainer.style.display = 'none';
+}
+
 // add event listeners to button click
 myButton.addEventListener('click', createMadlib);
+resetButton.addEventListener('click', resetMadLib);
