@@ -2,9 +2,36 @@
     box-sizing: border-box;
 }
 #input-container {
-    background-color: aqua;
+    background-color: steelblue;
+    text-align: center;
+
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+label {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+  
+}
+
+input {
+    margin: 5px;
 }
 
 #madlib-container {
     display: none;
+    height: 800px;
+    width: 1000px;
+    background-image: url("https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
